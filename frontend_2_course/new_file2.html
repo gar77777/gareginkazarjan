@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="blank" autocomplete="on" novalidate>
+    <fieldset>
+        <legend>Login form</legend>
+    <label for="user-name">User name</label>
+    <input type="text" id="user-name" name="user-name"  placeholder="enter username">
+    <label for="user-pass">Password</label>
+    <input type="password" id="user-pass" name="user-pass" autofocus maxlength="5">
+    <label for="user-email">Email</label>
+</fieldset>
+    <input type="email" id="user-email" name="user-email">
+    <label for="user-email">Email</label>
+    <p>Gender</p>
+    <label for="Male">Male</label>
+    <input type="radio" id="Male" name="user-gender" value="male">
+    <label for="Female">Female</label>
+    <input type="radio" id="Female" name="user-gender" value="female" disabled>
+    <label for="Unknown">Unknown</label>
+    <input type="radio" id="Unknown" name="user-gender" value="unknown">
+    <label for="agreemetn">Agree with terms and conditions.</label>
+    <input type="checkbox" id="agreement" name="agreement" checked>
+    <select name="brands" id="brands" size="2" multiple>
+        <option value="tln">Tallinn</option>
+        <option value="Msc">Moscow</option>
+        <option value="Lnd" selected>London</option>
+    </select><br>
+    <textarea name="message" id="message" cols="40" rows="10" placeholder="input your text"></textarea><br>
+    <input list="names">
+    <datalist id="names">
+        <option value="Roman">Roman</option>
+        <option value="Jack">Jack</option>
+        <option value="Mary">Mary</option>
+    </datalist><br>
+    <input type="text" pattern="[A-Za-z]{3}" name="pattern" id="pattern" title="Code">
+    <button onclick="alert('Hello world');">Click me too!</button>
+    <input type="submit" value="Click me!">
+    </form>
+</body>
+</html>
